@@ -1,8 +1,11 @@
-from src.app import suma
-def main() -> None:
-    suma(4,4)
+from src.app import app
     
-    
-    
+
+HOST = 'localhost'
+PORT = 4000
+DEBUG = True
+
+
+
 if __name__ == '__main__':
-    main()
+    app.run(HOST, PORT, DEBUG)
